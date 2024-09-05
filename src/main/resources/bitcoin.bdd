@@ -1,0 +1,4 @@
+Scenario: Fetch Bitcoin prices for a specific date range
+  Given the API is available
+  When I fetch prices for "2024-08-10" to "2024-08-20"
+  Then I should receive the highest and lowest prices
