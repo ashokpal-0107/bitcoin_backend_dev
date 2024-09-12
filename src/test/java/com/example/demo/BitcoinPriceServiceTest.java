@@ -19,5 +19,10 @@ public class BitcoinPriceServiceTest {
 	        List<BitcoinPriceDto> prices = service.getBitcoinPrices("2024-08-10", "2024-08-20", "USD");
 	        assertNotNull(prices);
 	    }
+	 @Test
+	    public void testFetchHistoricalPrices() {
+	        List<BitcoinPriceDto> prices = service.fetchHistoricalPrices("2024-08-10", "2024-08-20");
+	        assertNotNull(prices);
+	    }
 
 }

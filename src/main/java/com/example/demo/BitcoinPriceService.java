@@ -41,7 +41,7 @@ public class BitcoinPriceService {
         return historicalPrices;
     }
 
-    private List<BitcoinPriceDto> fetchHistoricalPrices(String startDate, String endDate) {
+    public List<BitcoinPriceDto> fetchHistoricalPrices(String startDate, String endDate) {
     	List<BitcoinPriceDto>  bitCoinList =  new  ArrayList<>();
     	
     	Map<String,String>  coinList =  new  HashMap();
@@ -135,8 +135,7 @@ public class BitcoinPriceService {
 		}
    
 		   // Printing all elements of a Map
-		   System.out.println(set.getKey() + " = "
-		                      + set.getValue());
+
 		   bitCoinList .add(bitCoin);
          }
 	}
